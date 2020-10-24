@@ -1,0 +1,40 @@
+<!doctype>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>List Randomizer</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>List Randomizer</h2>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <button id="start" type="button" class="btn btn-primary">Start Random Sort</button>
+        <button id="stop" type="button" class="btn btn-default" disabled="true">Stop Random Sort</button>
+      </div>
+    </form>
+
+    <div class="contents">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Picture</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="json/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
